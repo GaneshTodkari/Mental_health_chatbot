@@ -1,0 +1,69 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - express_emotion
+  - seek_help
+  - express
+
+actions:
+  - action_detect_emotion
+  - action_handle_affirm_deny
+  - action_sad_affirm_response
+  - action_angry_deny_response
+
+slots:
+  last_emotion:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+responses:
+  utter_greet:
+    - text: "Hello! I'm here to listen and help. How are you feeling today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Take care and feel free to come back whenever you need."
+
+  utter_helpline_info:
+    - text: |
+        Hey you're not alone ok I'm here for you take a deep breath there is nothing that cannot be solved.
+
+        If you need to talk to someone urgently, please reach out to AASRA:
+
+        📞 **AASRA Helpline:** +91-9820466726  
+        🌐 Website: [www.aasra.info](http://www.aasra.info)
+
+        I'm also here to talk if you’d like.
+
+  utter_handle_sadness:
+    - text: "I'm really sorry you're feeling sad. Want to talk more about it?"
+
+  utter_handle_stress:
+    - text: "Stress can be tough. Try a deep breath with me? I'm here to help you through this."
+
+  utter_handle_anger:
+    - text: "I hear you. Want to vent a bit more? I'm here for you."
+
+  utter_handle_anxiety:
+    - text: "Anxiety can feel overwhelming. Do you want to try a calming activity together?"
+
+  utter_handle_loneliness:
+    - text: "You're not alone here. Would you like to talk about what’s making you feel this way?"
+
+  utter_handle_happy:
+    - text: "That's wonderful! Let’s celebrate those positive feelings together! 😊"
+
+  utter_crisis_contact:
+    - text: |
+        🚨 I'm really concerned about how you're feeling.
+
+        Please reach out to someone immediately if you're in danger:
+        📞 **AASRA Helpline**: +91-9820466726  
+        🌐 [www.aasra.info](http://www.aasra.info)
+
+        I'm also here for you, whenever you're ready to talk.

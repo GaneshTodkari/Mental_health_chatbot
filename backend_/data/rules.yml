@@ -1,0 +1,60 @@
+rules:
+  - rule: Say hello
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Provide helpline when user seeks help
+    steps:
+      - intent: seek_help
+      - action: utter_helpline_info
+
+  - rule: Detect and respond with emotion (handles all emotion-related intents)
+    steps:
+      - intent: express_joy
+      - action: action_detect_emotion
+
+  - rule: Detect and respond with emotion (sadness)
+    steps:
+      - intent: express_sadness
+      - action: action_detect_emotion
+
+  - rule: Detect and respond with emotion (anger)
+    steps:
+      - intent: express_anger
+      - action: action_detect_emotion
+
+  - rule: Detect and respond with emotion (fear)
+    steps:
+      - intent: express_fear
+      - action: action_detect_emotion
+
+  - rule: Detect and respond with emotion (loneliness)
+    steps:
+      - intent: express_loneliness
+      - action: action_detect_emotion
+
+  - rule: Detect and respond with emotion (stress)
+    steps:
+      - intent: express_stress
+      - action: action_detect_emotion
+
+  - rule: Detect and respond with emotion (free expression)
+    steps:
+      - intent: express
+      - action: action_detect_emotion
+
+  - rule: Handle affirm based on last emotion
+    steps:
+      - intent: affirm
+      - action: action_handle_affirm_deny
+
+  - rule: Handle deny based on last emotion
+    steps:
+      - intent: deny
+      - action: action_handle_affirm_deny

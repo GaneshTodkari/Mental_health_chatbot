@@ -1,0 +1,73 @@
+version: "3.1"
+nlu:
+
+  - intent: affirm
+    examples: |
+      - yes
+      - yeah
+      - yup
+      - of course
+
+  - intent: deny
+    examples: |
+      - no
+      - nope
+      - not really
+
+  - intent: greet
+    examples: |
+      - hi
+      - hello
+      - hey
+      - good morning
+      - good evening
+      - hey there
+
+  - intent: express_emotion
+    examples: |
+      - I feel lost
+      - I don't know what I'm feeling
+      - Life is hard
+      - I feel something but I can't explain it
+
+  - intent: seek_help
+    examples: |
+      - I want to end my life
+      - I feel like dying
+      - I want to kill myself
+      - I can't go on
+      - I'm thinking of suicide
+      - Is there a helpline I can call?
+      - I want to die
+
+  - intent: express
+    examples: |
+      - I'm feeling happy
+      - I had a great day
+      - I'm so excited today
+      - Life feels good
+      - I feel sad
+      - I'm heartbroken
+      - I just want to cry
+      - Life is too hard
+      - I'm really angry
+      - Everything pisses me off
+      - I'm mad right now
+      - I want to scream
+      - I'm scared
+      - I'm afraid of what's going to happen
+      - I'm nervous
+      - I feel unsafe
+      - I feel so alone
+      - No one cares about me
+      - I have no friends
+      - I'm always by myself
+      - I'm so stressed out
+      - There's too much pressure on me
+      - I can't handle everything
+      - Everything feels overwhelming
+      - I feel sad and lonely
+      - I'm happy today
+      - I’m really anxious
+      - I'm feeling worthless
+      - Life is overwhelming

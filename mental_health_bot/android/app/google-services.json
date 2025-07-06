@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "889215816564",
+    "project_id": "mentalhealthbot-767c2",
+    "storage_bucket": "mentalhealthbot-767c2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889215816564:android:cfb914877a611bc81f9221",
+        "android_client_info": {
+          "package_name": "com.ingaw.mentalhealthbot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4JRy7rnmtOIKM3kJ5mKsSwSEndfMGxP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
